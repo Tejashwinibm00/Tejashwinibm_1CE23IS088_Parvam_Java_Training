@@ -7,33 +7,39 @@
 </head>
 <body>
     <h2>Student Registration</h2>
+
+    <h3>Personal Details</h3>
     <form action="/submit" method="POST">
         <label for="name">Name :</label>
         <input type="text" id="name" name="name" required /><br /><br />
 
         <label for="email">Email :</label>
         <input type="email" id="email" name="email" required /><br /><br />
-
+    <h3>Semester</h3>
         <label for="semester">Semester :</label>
         <input type="number" id="number" name="number" required /><br /><br />
-
+    <h3>Branch</h3>
         <label for="branch">Branch :</label>
         <select id="branch" name="branch">
             <option value="ise">ISE</option>
             <option value="cse">CSE</option>
             <option value="ece">ECE</option>
             <option value="aiml">AIML</option></select><br /><br />
-
+    <h3>Select a gender</h3>
         <label for="male">Male</label>
         <input type="radio" id="male" name="gender" value="male"><br>
 
         <label for="female">Female</label>
         <input type="radio" id="female" name="gender" value="female"><br>
 
-        <h2>Topics</h2>
+    <h3>Topics</h3>
         <input type="checkbox" name="topics" required /> Today's topic is covered<br /><br />
         <input type="checkbox" name="topics" required /> Today's topic is not covered<br /><br />
         <input type="checkbox" name="topics" required /> Today's topic is partially covered </label><br /><br />
+
+    <h3>Terms and Conditions</h3>
+        <input type="checkbox" name="terms" required />I agree to the terms and conditions </label><br /><br />
+    
        
         <input type="submit" value="Submit" />
     </form>
